@@ -1,4 +1,5 @@
 ingress-nginx:
+  namespace: ingress-nginx
   controller:
     service:
       type: LoadBalancer
