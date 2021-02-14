@@ -16,6 +16,7 @@ spec:
         - values.yaml
   destination:
     server: 'https://c1b8f3e1-f17a-4093-95c4-ce43ff69b150.k8s.ondigitalocean.com'
+    namespace: ingress-nginx
   syncPolicy:
     automated:
       prune: true
