@@ -1,0 +1,13 @@
+ingress-nginx:
+  controller:
+    service:
+      type: LoadBalancer
+      externalTrafficPolicy: Local
+      annotations:
+        "service.beta.kubernetes.io/do-loadbalancer-hostname": k8s.linuxnet.io
+        "service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol": "true"
+        "service.beta.kubernetes.io/do-loadbalancer-name": argo-app-cluster
+        "service.beta.kubernetes.io/do-loadbalancer-size-slug": lb-small
+    config:
+      use-proxy-protocol: true
+      enableTLSPassthrough: true
