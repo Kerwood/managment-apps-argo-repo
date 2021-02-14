@@ -1,5 +1,0 @@
-dependencies:
-- name: cert-manager
-  version: v1.1.0
-  namespace: cert-manager
-  repository: https://charts.jetstack.io
